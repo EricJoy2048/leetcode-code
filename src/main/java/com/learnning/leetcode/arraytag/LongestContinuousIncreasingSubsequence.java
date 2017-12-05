@@ -4,7 +4,6 @@ public class LongestContinuousIncreasingSubsequence {
 	public int findLengthOfLCIS(int[] nums) {
         int maxSubArrLength = Integer.MIN_VALUE;
         int subArrLength = 1;
-        int diff = 0;
         
         if(nums.length <= 1)return nums.length;
         
@@ -16,9 +15,6 @@ public class LongestContinuousIncreasingSubsequence {
             }else{
                 subArrLength++;
             }
-            
-            diff = currDiff;
-            
             
         }
         maxSubArrLength = Math.max(maxSubArrLength , subArrLength);
